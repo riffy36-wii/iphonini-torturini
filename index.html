@@ -7,9 +7,13 @@
 <br>
   <p>Non succederà niente di male, ma il tuo cervello si irriterà talmente tanto che...</p>
 <br>
-  <p><button onclick="setTimeout(()=>{new Audio(['https://riffy36-wii.github.io/iphonini-torturini/sms_alert_note.mp3','https://riffy36-wii.github.io/iphonini-torturini/New Tri-tone.mp3','https://riffy36-wii.github.io/iphonini-torturini/Opening.mp3'][~~(Math.random()*3)]).play();arguments.callee();live.srcdoc='Esplodi,  Adesso,  Esplodi'},Math.random()*3000)">Esplodi!</button></p>
+  <p><button onclick="setTimeout(()=>{new Audio(['https://riffy36-wii.github.io/iphonini-torturini/sms_alert_note.mp3','https://riffy36-wii.github.io/iphonini-torturini/New Tri-tone.mp3','https://riffy36-wii.github.io/iphonini-torturini/Opening.mp3'][~~(Math.random()*3)]).play();arguments.callee();notifica.showModal()},Math.random()*3000)">Esplodi!</button></p>
 <br>
-  
-<iframe style="width: 1%; height: 1%;" aria-live=assertive id=live></iframe>
+
+<dialog id=notifica aria-roledescription=Notifica>
+
+  <p><button autofocus onfocus="setTimeout(()=>this.close(),Math.random()*2000)" aria-label='Esplodi,  Adesso,  Esplodi brutto biforo'>Esplodi: Esplodi brutto biforo</button></p>
+</dialog>
 
 </body>
+
