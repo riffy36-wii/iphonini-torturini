@@ -7,7 +7,7 @@
 <br>
   <p>Non succederà niente di male, ma il tuo cervello si irriterà talmente tanto che...</p>
 <br>
-  <p><button onclick="setTimeout(()=>{new Audio(['https://riffy36-wii.github.io/iphonini-torturini/sms_alert_note.mp3','https://riffy36-wii.github.io/iphonini-torturini/New Tri-tone.mp3','https://riffy36-wii.github.io/iphonini-torturini/Opening.mp3'][~~(Math.random()*3)]).play();arguments.callee();notifica.showModal()},Math.random()*3000)">Esplodi!</button></p>
+  <p><button onclick="setTimeout(()=>{new Audio(['https://riffy36-wii.github.io/iphonini-torturini/sms_alert_note.mp3','https://riffy36-wii.github.io/iphonini-torturini/New Tri-tone.mp3','https://riffy36-wii.github.io/iphonini-torturini/Opening.mp3'][~~(Math.random()*3)]).play();arguments.callee();document.body.insertAdjacentHTML('afterend', '<p role=alert>Esplodi,  Adesso,  Esplodi brutto biforo</p>')},Math.random()*3000)">Esplodi!</button></p>
 <br>
 
 <dialog id=notifica aria-roledescription=Notifica>
@@ -16,4 +16,5 @@
 </dialog>
 
 </body>
+
 
